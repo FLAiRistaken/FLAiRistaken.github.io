@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="pagestyle" rel="stylesheet" href="styles/dark.css">
+  </head>
+  <body>
+    <header>
+      <div class="title-bar">
+        <div class="title-bar-container"></div>
+        <div class="nav-toggler" role="button" aria-label="Navigation menu toggler" aria-expanded="false">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <nav class="nav" aria-label="Main navigational menu">
+          <a href="#" class="link active">home</a>
+          <a href="#about" class="link">about</a>
+          <a href="#projects" class="link">projects</a>
+          <a href="#contact" class="link">contact</a>
+        </nav>
+      </div>
+      <div class="nav-background"></div>
+      <section class="header-sec">
+        <div>
+          <div class="header-container-one">
+            <span class="hello">
+              Hello, I'm
+            </span>
+            <div class="body-title">
+              <h1 class="title mobile">Joe Castle</h1>
+            </div>
+            <span class="sub-h"> Graduate Software Developer</span>
+            <div class="heading-underline"></div>
+            <div>
+              <div class="social-media-links-flex">
+                <a
+                  href="https://www.linkedin.com/in/joe-castle-592594254/"
+                  class="link"
+                  target="_blank"
+                  aria-label="Link to LinkedIn profile"
+                >
+                  <span class="social"></span>
+                </a>
+                <a
+                  href="https://github.com/FLAiRistaken"
+                  class="link"
+                  target="_blank"
+                  aria-label="Link to GitHub profile"
+                >
+                  <span class="social"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a href="#about" class="scroll-arrow arrow-link" aria-label="Scroll arrow, scrolls page to about section">
+        <span class="icon-arrow-down">➜</span>
+      </a>
+    </header>
+    <main>
+      <section id="about" class="light-sec">
+        <div class="section-container">
+          <h2 class="uppercase"><em class="slash-em">/</em>About me</h2>
+          <div class="grid-2-columns">
+            <div class="subtitle">
+              I graduated from De Montfort University with a <em class="magic">BSc (Hons) in Computer
+              Science</em>
+            </div>
+            <p class="about-para">
+              Throughout my studies, I have encountered many different technologies
+              and programming languages. I have a passion for learning new things
+              and I am always looking for new opportunities to expand my knowledge
+              and skills. I am currently looking for a <em class="magic">graduate role in software
+              development</em>, where I can continue to learn and grow as a developer.
+            </p>
+          </div>
+          <h3 class="subtitle uppercase "><em class="slash-em">/</em>University Modules</h3>
+          <div id="modulesCarousel" class="carousel" role="group" aria-roledescription="carousel" aria-label="Univeristy modules carousel">
+            <ul id="carouselContainer" class="carousel-container" role="list">
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide1Name" aria-describedby="slide1Desc">
+                  <img
+                    src="/images/scala-svg.svg"
+                    class="card-img svg"
+                    alt="Scala logo"
+                  >
+                  <span id="slide1Name" class="module-card-title">Computer Programming |</span>
+                  <p id="slide1Desc" class="card-info">
+                    Fundamental programming constructs such as data types, variables,
+                    input/output, expressions, and control structures.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide2Name" aria-describedby="slide2Desc">
+                  <img
+                    src="/images/scala-svg.svg"
+                    class="card-img svg"
+                    alt="Scala logo"
+                  >
+                  <span id="slide2Name" class="module-card-title">Computer Programming ||</span>
+                  <p id="slide2Desc" class="card-info">
+                    Functions, higher-order functions, modules and classes, state encapsulation,
+                    and unit testing.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide3Name" aria-describedby="slide3Desc">
+                  <img
+                    src="/images/dmu-logo.png"
+                    class="card-img"
+                    alt="dmu logo"
+                  >
+                  <span id="slide3Name" class="module-card-title">Computer Ethics</span>
+                  <p id="slide3Desc" class="card-info">
+                    Examine the ethical and social aspects of computing,
+                    explore the complexity and multiplicity of computer ethics, and evaluate the
+                    role of the IT professional in society.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide4Name" aria-describedby="slide4Desc">
+                  <img
+                    src="/images/Cyber-Security-svg.svg"
+                    class="card-img svg"
+                    alt="picture of a lock with digital lines around"
+                  >
+                  <span id="slide4Name" class="module-card-title">Computer Law and Cyber Security</span>
+                  <p id="slide4Desc" class="card-info">
+                    An introductin to the law and legal issues surrounding the use of computers and the
+                    internet, and an introduction to the principles of cyber security.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide5Name" aria-describedby="slide5Desc">
+                  <img
+                    src="/images/comp-syst-svg.svg"
+                    class="card-img svg"
+                    alt="image of binary code on a file / peice of paper"
+                  >
+                  <span id="slide5Name" class="module-card-title">Computer Systems</span>
+                  <p id="slide5Desc" class="card-info">
+                    An introduction to the principles of computer systems, including the
+                    hardware and software components of a computer system such as the CPU, memory,
+                    storage, and operating systems and how these compnents function.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide6Name" aria-describedby="slide6Desc">
+                  <img
+                    src="/images/networks-svg.svg"
+                    class="card-img svg"
+                    alt="image of a 3 computer connected in a network"
+                  >
+                  <span id="slide6Name" class="module-card-title">Computer Networks</span>
+                  <p id="slide6Desc" class="card-info">
+                    An introduction to the principles of computer networks, including network protocols,
+                    network topologies, network security, and other network technologies.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide7Name" aria-describedby="slide7Desc">
+                  <img
+                    src="/images/maths-svg.svg"
+                    class="card-img svg"
+                    alt="image of mathematics equipment"
+                  >
+                  <span id="slide7Name" class="module-card-title">Mathematics</span>
+                  <p id="slide7Desc" class="card-info">
+                    An introduction to the principles of mathematics for computing, including
+                    logic such as truth tables, conditional statements, and set theory.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide8Name" aria-describedby="slide8Desc">
+                  <img
+                    src="/images/mysql-logo-svg.svg"
+                    class="card-img svg"
+                    alt="MySQL logo"
+                  >
+                  <span id="slide8Name" class="module-card-title">Database Design and Implementation</span>
+                  <p id="slide8Desc" class="card-info">
+                    An introduction to the principles of database design and implementation, including
+                    the relational model, SQL, and database design.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide9Name" aria-describedby="slide9Desc">
+                  <img
+                    src="/images/dmu-logo.png"
+                    class="card-img"
+                    alt="De Montfort University logo"
+                  >
+                  <span id="slide9Name" class="module-card-title">Introduction to Research</span>
+                  <p id="slide9Desc" class="card-info">
+                    An introduction to the principles of research, including research methods,
+                    correct referecing practices and the use of academic literature.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide10Name" aria-describedby="slide10Desc">
+                  <img
+                    src="/images/agile-svg.svg"
+                    class="card-img svg"
+                    alt="image showing the agile methodology"
+                  >
+                  <span id="slide10Name" class="module-card-title">Agile Team Development</span>
+                  <p id="slide10Desc" class="card-info">
+                    An introduction to the principles of the agile methodology and team
+                    software development, including team roles, agile processes, and team meetings.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide11Name" aria-describedby="slide11Desc">
+                  <img
+                    src="/images/software-sec-svg.svg"
+                    class="card-img svg"
+                    alt="image of a shield with a lighting bolt in the middle"
+                  >
+                  <span id="slide11Name" class="module-card-title">Software and Security Management</span>
+                  <p id="slide11Desc" class="card-info">
+                    An introduction to software and security management,
+                    providing an insight into non-technical aspects of software development,
+                    including project management, development life cycles,
+                    version control, and software security.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide12Name" aria-describedby="slide12Desc">
+                  <img
+                    src="/images/java-svg.svg"
+                    class="card-img svg"
+                    alt="Java logo"
+                  >
+                  <span id="slide12Name" class="module-card-title">Object Oriented Design</span>
+                  <p id="slide12Desc" class="card-info">
+                    An introduction to the principles of object oriented design, including
+                    object oriented concepts, issues and princples such as encapsulation and inheritance,
+                    design patterns, and UML diagrams.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide13Name" aria-describedby="slide13Desc">
+                  <img
+                    src="/images/java-svg.svg"
+                    class="card-img svg"
+                    alt="Java logo"
+                  >
+                  <span id="slide13Name" class="module-card-title">Object Oriented Development</span>
+                  <p id="slide13Desc" class="card-info">
+                    A continuation of Object Oriented Design that includes collections, Input / Output,
+                    creating GUIs, and addressing maintainability using MVC.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide14Name" aria-describedby="slide14Desc">
+                  <img
+                    src="/images/php-svg.svg"
+                    class="card-img svg"
+                    alt="PHP logo"
+                  >
+                  <span id="slide14Name" class="module-card-title">Web Application Development</span>
+                  <p id="slide14Desc" class="card-info">
+                    An introduction to the principles of web application development, including
+                    using PHP, databases, handling data and data persistence, and vulnerabilities / security.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide15Name" aria-describedby="slide15Desc">
+                  <img
+                    src="/images/data-struc-svg.svg"
+                    class="card-img svg"
+                    alt="image showing a data structure using dots and lines"
+                  >
+                  <span id="slide15Name" class="module-card-title">Data Structures and Algorithms</span>
+                  <p id="slide15Desc" class="card-info">
+                    An introduction to data structures and algorithms, including
+                    data structures such as arrays, lists, stacks, queues, trees, graphs, and hash maps,
+                    recursion, algorithms such as sorting and searching, and complexity analysis.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide16Name" aria-describedby="slide16Desc">
+                  <img
+                    src="/images/java-svg.svg"
+                    class="card-img svg"
+                    alt="Java logo"
+                  >
+                  <span id="slide16Name" class="module-card-title">Concurrent and Parallel Algorithms</span>
+                  <p id="slide16Desc" class="card-info">
+                    An introduction to the principles of concurrency and parallelism, including
+                    race conditions, deadlocks, the use of semaphores and locks, synchronisation issues,
+                    and temporal logic.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide17Name" aria-describedby="slide17Desc">
+                  <img
+                    src="/images/scala-svg.svg"
+                    class="card-img svg"
+                    alt="Scala logo"
+                  >
+                  <span id="slide17Name" class="module-card-title">Functional Software Development</span>
+                  <p id="slide17Desc" class="card-info">
+                    An introduction to the principles of functional programming, including
+                    functional programming concepts, issues and principles such as immutability and
+                    higher order functions.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide18Name" aria-describedby="slide18Desc">
+                  <img
+                    src="/images/HTML5_svg.svg"
+                    class="card-img"
+                    alt="image showing html logo"
+                  >
+                  <span id="slide18Name" class="module-card-title">Front-End Web Development</span>
+                  <p id="slide18Desc" class="card-info">
+                    An introductin to front-end web development, including HTML, CSS, JavaScript.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide19Name" aria-describedby="slide19Desc">
+                  <img
+                    src="/images/dmu-logo.png"
+                    class="card-img"
+                    alt="De Montfort University logo"
+                  >
+                  <span id="slide19Name" class="module-card-title">Interaction Design</span>
+                  <p id="slide19Desc" class="card-info">
+                    An introduction to the principles of UI and UX design, including
+                    interaction design concepts, issues and principles such as usability and accessibility.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide20Name" aria-describedby="slide20Desc">
+                  <img
+                    src="/images/kotlin-svg.svg"
+                    class="card-img svg"
+                    alt="Kotlin logo"
+                  >
+                  <span id="slide20Name" class="module-card-title">Mobile Application Development</span>
+                  <p id="slide20Desc" class="card-info">
+                    An introduction to developing mobile applications, making use of Kotlin and
+                    Android Studio.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide21Name" aria-describedby="slide21Desc">
+                  <img
+                    src="/images/kali-svg.svg"
+                    class="card-img svg"
+                    alt="scala logo"
+                  >
+                  <span id="slide21Name" class="module-card-title">Web Application Penetration Testing</span>
+                  <p id="slide21Desc" class="card-info">
+                    An introduction to web application penetration testing, including
+                    the use of Kali Linux, Metasploitable, SamuraiWTF, and Burp Suite to
+                    identify and exploit vulnerabilities such as SQL injection.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide22Name" aria-describedby="slide22Desc">
+                  <img
+                    src="/images/python-svg.svg"
+                    class="card-img svg"
+                    alt="scala logo"
+                  >
+                  <span id="slide22Name" class="module-card-title">Development Project</span>
+                  <p id="slide22Desc" class="card-info">
+                    This module is my disseration project, which is a password manager application
+                    written in Python that makes use of PySide6 and Qt for the GUI, MySQL and MongoDB
+                    for the database, and Argon2 for hashing.
+                  </p>
+                </div>
+              </li>
+              <li class="module-card-container" aria-roledescription="slide">
+                <div class="card module" aria-labelledby="slide23Name" aria-describedby="slide23Desc">
+                  <img
+                    src="/images/dmu-logo.png"
+                    class="card-img"
+                    alt="De Montfort University logo"
+                  >
+                  <span id="slide23Name" class="module-card-title">Systems Building: Methods</span>
+                  <p id="slide23Desc" class="card-info">
+                    This module explored different systems building methods and methodologies,
+                    including the waterfall model, agile, and DevOps and their principles.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="carousel-controls">
+            <div id="prevButton" class="arrow left" role="button" aria-label="Previous slide">&#10140;</div>
+            <div id="nextButton" class="arrow" role="button" aria-label="Next slide">&#10140;</div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="dark-sec">
+        <div class="section-container">
+          <div class="grid-2-columns" role="group" aria-roledescription="projects">
+            <div class="proj-grid-container">
+              <div class="subtitle-container">
+                <h2 class="uppercase"><em class="slash-em">/</em>Projects</h2>
+                <div class="subtitle">Here are some of my projects</div>
+                <a href="https://github.com/FLAiRistaken"
+                  target="_blank"
+                  class="link-wrapper"
+                  aria-label="Link to GitHub profile">
+                  <span class="link-text magic">View all projects</span>
+                  <span class="social magic"></span>
+                </a>
+              </div>
+              <div id="proj1" class="card project" aria-labelledby="proj1Name">
+                <div class="tech-badges-container" role="group" aria-roledescription="technologies used in project">
+                  <div class="tech-badge">Python</div>
+                  <div class="tech-badge">Qt GUI</div>
+                  <div class="tech-badge">MySQL</div>
+                </div>
+                <div class="projects-text-container">
+                  <div><img src="/images/passme-logo-png-cropped.png" alt="Pass.me logo" class="project-logo"></div>
+                  <div id="proj1Name" class="proj-card-title">Pass.me Password Manager</div>
+                </div>
+                <img src="/images/pass-me.png" class="project-img" alt="screenshots of pass.me password manager">
+              </div>
+            </div>
+              <div class="proj-grid-container">
+                <div id="proj2" class="card project" aria-labelledby="proj2Name">
+                <div class="tech-badges-container" role="group" aria-roledescription="technologies used in project">
+                  <div class="tech-badge">Java</div>
+                  <div class="tech-badge">JavaFX</div>
+                </div>
+                <div class="projects-text-container">
+                  <div><img src="/images/dmu-logo.png" class="project-logo" alt="DMU Logo"></div>
+                  <div id="proj2Name" class="proj-card-title">Module Chooser</div>
+                </div>
+                <img src="/images/module_chooser_final.png" class="project-img" alt="screenshots of module chooser">
+              </div>
+              <div id="proj3" class="card project" aria-labelledby="proj3Name">
+                <div class="tech-badges-container" role="group" aria-roledescription="technologies used in project">
+                  <div class="tech-badge">Scala</div>
+                  <div class="tech-badge">Functional Programming</div>
+                </div>
+                <div class="projects-text-container">
+                  <div><img src="/images/dmu-logo.png" class="project-logo" alt="DMU Logo"></div>
+                  <div id="proj3Name" class="proj-card-title">FP Calendar</div>
+                </div>
+                <img src="/images/calendar.png" class="project-img" alt="screenshots of functional programming calendar">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="light-sec">
+        <div class="section-container">
+          <div class="default-container">
+            <div id="contactGrid" class="grid-2-columns">
+              <div id="contactTextContainer" class="text-container">
+                <h2 class="uppercase"><em class="slash-em">/</em>Contact</h2>
+                <div class="subtitle">Interested? Feel free to <em class="magic">contact me</em></div>
+              </div>
+              <form id="contactForm" aria-label="Contact form">
+                <div class="grid-contact-form">
+                  <input type="text" class="input" name="name" required autocomplete="given-name" placeholder="Enter your name" aria-label="Enter your name" aria-required="true">
+                  <input type="email" class="input" name="email" required autocomplete="email" placeholder="Enter your email" aria-label="Enter your email" aria-required="true">
+                  <textarea class="input" name="message" required placeholder="Enter your message" aria-label="Enter your message" aria-required="true"></textarea>
+                  <input type="submit" class="submit" value="Send Message">
+                </div>
+              </form>
+              <div id="googleMap" role="application" aria-label="Google map showing Leicester"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="section-container">
+          <div class="grid-2-columns footer-bottom">
+            <nav class="footer-nav" aria-label="Footer navigation menu">
+              <a href="#" class="link">home</a>
+              <a href="#about" class="link">about</a>
+              <a href="#projects" class="link">projects</a>
+              <a href="#contact" class="link">contact</a>
+            </nav>
+            <div class="footer-credits">
+              <p>Designed and developed by Joe Castle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiHIQR88Jw-uEWJd_WvGMqcpeJPFh41SI&callback=initMap">
+    </script>
+  </body>
+</html>
